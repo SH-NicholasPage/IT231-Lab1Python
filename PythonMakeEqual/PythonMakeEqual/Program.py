@@ -8,9 +8,10 @@ from Source import *
 MAX_SCORE: Final[int] = 10
 
 try:
-    f = open("../inputs.txt", "r")
+    dirname = os.path.dirname(__file__)
+    f = open(os.path.join(dirname, '../inputs.txt'), "r")
 except:
-    print("Unable to open the file!");
+    print("Unable to open the file!")
 
 questions = 0
 questionsCorrect = 0
